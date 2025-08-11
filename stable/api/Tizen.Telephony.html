@@ -5,37 +5,37 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Namespace Tizen.Telephony
-   </title>
+ </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Tizen.Telephony
-   ">
-    <meta name="generator" content="docfx 2.56.1.0">
-    <meta name="version" content="API9">
-    
+ ">
+    <meta name="generator" content="docfx ">
+    <meta name="version" content="API12">
+  
     <link rel="shortcut icon" href="../../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/tizen.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+  
     <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+  
+  
+  
   </head>  <body>
     <div class="layout--main">
       <div class="container-fluid h-100 api-infra">
         <div role="main" class="article row flex-xl-nowrap h-100 body-content hide-when-search">
           <div class="col-md-3 col-xl-2 px-0 layout--column is-sidebar" id="td_docs-sidebar">
-            
+
             <div class="sidenav hide-when-search">
               <div class="sidetoggle collapse d-lg-block" id="secondaryNavbar">
               </div>
             </div>
           </div>
           <div class="d-none d-xl-block col-xl-2 layout--column pl-0 is-toc" id="td_docs-toc">
-            
+
             <div class="hidden-sm sideaffix toc-wrapper" role="complementary">
               <div class="bs-docs-sidebar toc-content hidden-print hidden-xs hidden-sm affix" id="affix">
               </div>
@@ -43,19 +43,19 @@
           </div>
           <main class="col-md-9 col-xl-8 layout--column is-content">
             <div id="printableArea" class="md-content-wrapper">
-              
+
               <nav id="td_docs-breadcrumb" aria-label="breadcrumb"></nav>              <section class="content wrap" id="_content" data-uid="Tizen.Telephony">
   <div class="entity entity-namespace">
   <h1 id="Tizen_Telephony" data-uid="Tizen.Telephony" class="mt-0 text-break"><span class="entity-type">Namespace</span>
-  <span id="namespace">Tizen.Telephony</span>
-  </h1>
-  
+<span id="namespace">Tizen.Telephony</span>
+</h1>
+
   <h3 class="hidden-anchor m-0 d-none" id="description"><a href="#description"></a>Description</h3>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h2 id="classes">Classes
-  </h2>
+</h2>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.Call.html">Call</a>
@@ -68,14 +68,20 @@ It provides the list of CallHandle which can be used to get the information abou
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.CallHandle.html">CallHandle</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>This class provides the APIs to get the information about calls.</p>
+        <section class="col col-12 col-md-8"><p>This class provides the APIs to get the information about calls.
+It contains several properties such as HandleId, Number, Type, Status, Direction, and ConferenceStatus,
+which allow users to obtain specific details about a call. These properties can be accessed individually
+to gain insights into aspects like the call handle ID, number, type, status, direction, and whether it is a conference call or not.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.ChangeNotificationEventArgs.html">ChangeNotificationEventArgs</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>This class contains the data related to the Notification event.</p>
+        <section class="col col-12 col-md-8"><p>This class contains the data related to the Notification event.
+Each Notification type corresponds to a specific change in the telephony or network configuration,
+allowing developers to react accordingly. By leveraging these notifications, applications can maintain
+real-time awareness of critical telephony and network conditions, enhancing overall user experience.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -90,22 +96,26 @@ It also provides APIs to get the SlotHandles, which can then be used to get othe
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.Modem.html">Modem</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>This class provides APIs to obtain information from the modem.</p>
+        <section class="col col-12 col-md-8"><p>This class provides APIs to obtain information from the modem.
+It includes properties such as Imei, which allows users to retrieve the International
+Mobile Station Equipment Identity (IMEI) of a mobile phone. By utilizing these features,
+developers can gather valuable information about the modem and incorporate it into their applications effectively.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.Network.html">Network</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>The Network class provides APIs to obtain information about the current telephony service network.</p>
+        <section class="col col-12 col-md-8"><p>The Network class provides APIs to obtain information about the current telephony service network.
+It offers properties such as Lac, which allows users to retrieve the Location Area Code (LAC) of
+the current location. Another property, CellId, enables users to obtain the cell identification number.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.Sim.html">Sim</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>This class provides APIs that allow you to extract the information stored on a SIM card.</p>
-</section>
+        <section class="col col-12 col-md-8"></section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
@@ -122,7 +132,7 @@ It also provides APIs to get the SlotHandles, which can then be used to get othe
 </section>
       </div>
     <h2 id="enums">Enums
-  </h2>
+</h2>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.CallHandle.CallDirection.html">CallHandle.CallDirection</a>
@@ -169,14 +179,14 @@ It also provides APIs to get the SlotHandles, which can then be used to get othe
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.Network.DefaultDataSubscription.html">Network.DefaultDataSubscription</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Enumeration for the possible &apos;default&apos; Data Subscriptions for the Packet Switched(PS).</p>
+        <section class="col col-12 col-md-8"><p>Enumeration for the possible 'default' Data Subscriptions for the Packet Switched(PS).</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.Telephony.Network.DefaultSubscription.html">Network.DefaultSubscription</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Enumeration for defining the possible &apos;default&apos; Subscriptions for the Circuit Switched(CS).</p>
+        <section class="col col-12 col-md-8"><p>Enumeration for defining the possible 'default' Subscriptions for the Circuit Switched(CS).</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -256,8 +266,8 @@ Rssi6 indicates the highest strength.</p>
           </main>
         </div>
       </div>
-          </div>
-    
+    </div>
+
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>

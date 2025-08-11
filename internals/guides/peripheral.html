@@ -7,33 +7,33 @@
     <title>Tizen Peripheral I/O Native API </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Tizen Peripheral I/O Native API ">
-    <meta name="generator" content="docfx 2.56.1.0">
+    <meta name="generator" content="docfx ">
     <meta name="version" content="internals">
-    
+  
     <link rel="shortcut icon" href="../../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/tizen.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+  
     <meta property="docfx:tocrel" content="../toc.html">
-    
-    
-    
+  
+  
+  
   </head>  <body>
     <div class="layout--main">
       <div class="container-fluid h-100 api-infra">
         <div role="main" class="article row flex-xl-nowrap h-100 body-content hide-when-search">
           <div class="col-md-3 col-xl-2 px-0 layout--column is-sidebar" id="td_docs-sidebar">
-            
+
             <div class="sidenav hide-when-search">
               <div class="sidetoggle collapse d-lg-block" id="secondaryNavbar">
               </div>
             </div>
           </div>
           <div class="d-none d-xl-block col-xl-2 layout--column pl-0 is-toc" id="td_docs-toc">
-            
+
             <div class="hidden-sm sideaffix toc-wrapper" role="complementary">
               <div class="bs-docs-sidebar toc-content hidden-print hidden-xs hidden-sm affix" id="affix">
               </div>
@@ -41,7 +41,7 @@
           </div>
           <main class="col-md-9 col-xl-8 layout--column is-content">
             <div id="printableArea" class="md-content-wrapper">
-              
+
               <nav id="td_docs-breadcrumb" aria-label="breadcrumb"></nav>              <section class="content wrap" id="_content" data-uid="">
 <h1 id="tizen-peripheral-io-native-api">Tizen Peripheral I/O Native API</h1>
 
@@ -53,7 +53,7 @@
 <li><a href="peripheral-i2c.html">I<sup>2</sup>C</a> (Inter-Integrated Circuit)</li>
 <li><a href="peripheral-uart.html">UART</a> (Universal Asynchronous Receiver-Transmitter)</li>
 </ul>
-<p>Since each peripheral supports different interfaces and protocols, you must check from the peripheral&#39;s specifications whether a specific protocol is supported. Peripheral I/O APIs are categorized based on the protocol.</p>
+<p>Since each peripheral supports different interfaces and protocols, you must check from the peripheral's specifications whether a specific protocol is supported. Peripheral I/O APIs are categorized based on the protocol.</p>
 <p><strong>Figure: Peripherals connected to an IoT device</strong></p>
 <p><img src="media/peri_api_devices.png" alt="Peripherals connected to an IoT device"></p>
 <p><a name="protocol"></a></p>
@@ -99,7 +99,8 @@
 <pre><code class="lang-xml">&lt;privileges&gt;
    &lt;privilege&gt;http://tizen.org/privilege/peripheralio&lt;/privilege&gt;
 &lt;/privileges&gt;
-</code></pre><p>To obtain authorization to use platform-level privileges, the application must be signed with a <strong>platform-level distributor</strong> certificate. Please follow <a href="https://docs.tizen.org/application/vstools/tools/certificate-manager/">this guide</a> on how to create a certificate profile for signing the application. In third section of creating certificate &quot;Distributor Certificate&quot; please select &quot;Select a distributor certificate for an another app store&quot; and provide <strong>platform-level distributor</strong> certificate obtained from Samsung.</p>
+</code></pre>
+<p>To obtain authorization to use platform-level privileges, the application must be signed with a <strong>platform-level distributor</strong> certificate. Please follow <a href="https://docs.tizen.org/application/vstools/tools/certificate-manager/">this guide</a> on how to create a certificate profile for signing the application. In third section of creating certificate &quot;Distributor Certificate&quot; please select &quot;Select a distributor certificate for an another app store&quot; and provide <strong>platform-level distributor</strong> certificate obtained from Samsung.</p>
 </li>
 <li><p>To use the classes and data types of the Peripheral I/O API please use <code>Tizen.Peripheral</code> namespace.</p>
 </li>
@@ -109,8 +110,8 @@
           </main>
         </div>
       </div>
-          </div>
-    
+    </div>
+
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>

@@ -7,33 +7,33 @@
     <title>PWM </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="PWM ">
-    <meta name="generator" content="docfx 2.56.1.0">
+    <meta name="generator" content="docfx ">
     <meta name="version" content="internals">
-    
+  
     <link rel="shortcut icon" href="../../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/tizen.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+  
     <meta property="docfx:tocrel" content="../toc.html">
-    
-    
-    
+  
+  
+  
   </head>  <body>
     <div class="layout--main">
       <div class="container-fluid h-100 api-infra">
         <div role="main" class="article row flex-xl-nowrap h-100 body-content hide-when-search">
           <div class="col-md-3 col-xl-2 px-0 layout--column is-sidebar" id="td_docs-sidebar">
-            
+
             <div class="sidenav hide-when-search">
               <div class="sidetoggle collapse d-lg-block" id="secondaryNavbar">
               </div>
             </div>
           </div>
           <div class="d-none d-xl-block col-xl-2 layout--column pl-0 is-toc" id="td_docs-toc">
-            
+
             <div class="hidden-sm sideaffix toc-wrapper" role="complementary">
               <div class="bs-docs-sidebar toc-content hidden-print hidden-xs hidden-sm affix" id="affix">
               </div>
@@ -41,7 +41,7 @@
           </div>
           <main class="col-md-9 col-xl-8 layout--column is-content">
             <div id="printableArea" class="md-content-wrapper">
-              
+
               <nav id="td_docs-breadcrumb" aria-label="breadcrumb"></nav>              <section class="content wrap" id="_content" data-uid="">
 <h1 id="pwm">PWM</h1>
 
@@ -66,42 +66,49 @@
 <pre><code class="lang-csharp">int chip = 0;
 int pin = 2;
 PwmPin pwm = new PwmPin(chip, pin);
-</code></pre><blockquote><p><strong>Note</strong></p>
+</code></pre>
+<blockquote>
+<p><strong>Note</strong></p>
 <p>For more information on the pin names and locations, see <a href="peripheral.html#protocol">Supported Protocols</a>.</p>
 </blockquote>
 </li>
 <li><p>To close a PWM handle that is no longer used, use the <code>PwmPin.Close()</code> method:</p>
 <pre><code class="lang-csharp">pwm.Close();
-</code></pre></li>
+</code></pre>
+</li>
 </ol>
 <h2 id="setting-the-period">Setting the Period</h2>
 <p>To set the period, use the <code>PwmPin.Period</code> property.</p>
 <p>The following example sets the period to 20 milliseconds. The unit is nanoseconds.</p>
 <pre><code class="lang-csharp">uint period = 20000000;
 pwm.Period = period;
-</code></pre><h2 id="setting-the-duty-cycle">Setting the Duty Cycle</h2>
+</code></pre>
+<h2 id="setting-the-duty-cycle">Setting the Duty Cycle</h2>
 <p>To set the duty cycle, use the <code>PwmPin.DutyCycle</code> property.</p>
 <p>The following example sets the duty cycle to 2 milliseconds. The unit is nanoseconds.</p>
 <pre><code class="lang-csharp">uint duty_cycle = 2000000;
 pwm.DutyCycle = duty_cycle;
-</code></pre><h2 id="setting-the-polarity">Setting the Polarity</h2>
+</code></pre>
+<h2 id="setting-the-polarity">Setting the Polarity</h2>
 <p>To set the polarity, use the <code>PwmPin.Polarity()</code> method with 1 of the following <code>PwmPulsePolarity</code> types:</p>
 <ul>
 <li><code>PwmPulsePolarity.ActiveHigh</code>: Polarity is high.</li>
 <li><code>PwmPulsePolarity.ActiveLow</code>: Polarity is low.</li>
 </ul>
 <pre><code class="lang-csharp">pwm.PwmPulsePolarity = PwmPulsePolarity.ActiveHigh;
-</code></pre><h2 id="enabling-repetition">Enabling Repetition</h2>
+</code></pre>
+<h2 id="enabling-repetition">Enabling Repetition</h2>
 <p>To enable repetition, use the <code>PwmPin.Enable()</code> method:</p>
 <pre><code class="lang-csharp">bool enable = true;
 pwm.Enable = enable;
-</code></pre></section>
+</code></pre>
+</section>
             </div>
           </main>
         </div>
       </div>
-          </div>
-    
+    </div>
+
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>

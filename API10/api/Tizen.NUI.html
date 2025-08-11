@@ -5,37 +5,37 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Namespace Tizen.NUI
-   </title>
+ </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Tizen.NUI
-   ">
-    <meta name="generator" content="docfx 2.56.1.0">
+ ">
+    <meta name="generator" content="docfx ">
     <meta name="version" content="API10">
-    
+  
     <link rel="shortcut icon" href="../../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/tizen.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
+  
     <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+  
+  
+  
   </head>  <body>
     <div class="layout--main">
       <div class="container-fluid h-100 api-infra">
         <div role="main" class="article row flex-xl-nowrap h-100 body-content hide-when-search">
           <div class="col-md-3 col-xl-2 px-0 layout--column is-sidebar" id="td_docs-sidebar">
-            
+
             <div class="sidenav hide-when-search">
               <div class="sidetoggle collapse d-lg-block" id="secondaryNavbar">
               </div>
             </div>
           </div>
           <div class="d-none d-xl-block col-xl-2 layout--column pl-0 is-toc" id="td_docs-toc">
-            
+
             <div class="hidden-sm sideaffix toc-wrapper" role="complementary">
               <div class="bs-docs-sidebar toc-content hidden-print hidden-xs hidden-sm affix" id="affix">
               </div>
@@ -43,19 +43,19 @@
           </div>
           <main class="col-md-9 col-xl-8 layout--column is-content">
             <div id="printableArea" class="md-content-wrapper">
-              
+
               <nav id="td_docs-breadcrumb" aria-label="breadcrumb"></nav>              <section class="content wrap" id="_content" data-uid="Tizen.NUI">
   <div class="entity entity-namespace">
   <h1 id="Tizen_NUI" data-uid="Tizen.NUI" class="mt-0 text-break"><span class="entity-type">Namespace</span>
-  <span id="namespace">Tizen.NUI</span>
-  </h1>
-  
+<span id="namespace">Tizen.NUI</span>
+</h1>
+
   <h3 class="hidden-anchor m-0 d-none" id="description"><a href="#description"></a>Description</h3>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h2 id="classes">Classes
-  </h2>
+</h2>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.AbsoluteLayout.html">AbsoluteLayout</a>
@@ -66,10 +66,7 @@ Positions are from the top left of the layout and can be set using the View.Posi
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
-          <span class="obsolete-content-wrapper">
-            <a class="xref" href="Tizen.NUI.Adaptor.html">Adaptor</a>
-          </span>
-          <span class="obsolete-img" title="This has been deprecated in API8 and will be removed in API10. This is not used anymore, do not use."></span>
+          <a class="xref" href="Tizen.NUI.Adaptor.html">Adaptor</a>
         </h4>
         <section class="col col-12 col-md-8"><p>An Adaptor object is used to initialize and control how Dali runs.</p>
 <p>It provides the lifecycle interface that allows the application
@@ -126,10 +123,7 @@ If any of the individual calls to those functions exceeds the overall animation 
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
-          <span class="obsolete-content-wrapper">
-            <a class="xref" href="Tizen.NUI.BaseHandle.FocusRequestArgs.html">BaseHandle.FocusRequestArgs</a>
-          </span>
-          <span class="obsolete-img" title="Deprecated in API9; Will be removed in API11."></span>
+          <a class="xref" href="Tizen.NUI.BaseHandle.FocusRequestArgs.html">BaseHandle.FocusRequestArgs</a>
         </h4>
         <section class="col col-12 col-md-8"><p>Contains event arguments for the FocusChangeRequested event.</p>
 </section>
@@ -171,11 +165,11 @@ added to them.</p>
 Used for registering controls and any scriptable properties they have (see ScriptableProperty).</p>
 <p>Internal Design from C# to C++</p>
 <ul>
-<li>Each custom C# view should have it&apos;s static constructor called before any JSON file is loaded.
+<li>Each custom C# view should have it's static constructor called before any JSON file is loaded.
 Static constructors for a class will only run once ( they are run per control type, not per instance).
 Example of running a static constructor:
 System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor (typeof(Spin).TypeHandle);
-Inside the static constructor the control should register it&apos;s type with the ViewRegistry
+Inside the static constructor the control should register it's type with the ViewRegistry
 For example:</li>
 </ul>
 <p>static Spin()
@@ -205,6 +199,13 @@ This reduces ambiguity when using methods which accept angles in degrees or radi
           <a class="xref" href="Tizen.NUI.Disposable.html">Disposable</a>
         </h4>
         <section class="col col-12 col-md-8"><p>Disposable class.</p>
+</section>
+      </div>
+      <div class="described-list-item row ml-0 mr-0">
+        <h4 class="col col-12 col-md-4">
+          <a class="xref" href="Tizen.NUI.DragAndDrop.html">DragAndDrop</a>
+        </h4>
+        <section class="col col-12 col-md-8"><p>DragAndDrop controls the drag object and data.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -270,10 +271,7 @@ It also draws a highlight for the focused view and sends an event when the focus
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
-          <span class="obsolete-content-wrapper">
-            <a class="xref" href="Tizen.NUI.FocusManager.PreFocusChangeEventArgs.html">FocusManager.PreFocusChangeEventArgs</a>
-          </span>
-          <span class="obsolete-img" title="Please do not use! This will be deprecated in API10. Please use FocusChangingEventArgs instead!"></span>
+          <a class="xref" href="Tizen.NUI.FocusManager.PreFocusChangeEventArgs.html">FocusManager.PreFocusChangeEventArgs</a>
         </h4>
         <section class="col col-12 col-md-8"><p>Event arguments that passed via the PreFocusChange signal.</p>
 </section>
@@ -565,7 +563,7 @@ Vibrant, Vibrant Dark, Vibrant Light, Muted, Muted Dark, Muted Light</p>
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.Palette.Swatch.html">Palette.Swatch</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Represents a color swatch generated from an image&apos;s palette. The RGB color can be retrieved calling getRgb()</p>
+        <section class="col col-12 col-md-8"><p>Represents a color swatch generated from an image's palette. The RGB color can be retrieved calling getRgb()</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -838,10 +836,7 @@ And, to use custom direction, the direction can be set by using Vector2.</p>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
-          <span class="obsolete-content-wrapper">
-            <a class="xref" href="Tizen.NUI.StyleManager.html">StyleManager</a>
-          </span>
-          <span class="obsolete-img" title="Deprecated in API9, will be removed in API11. Use ThemeManager instead."></span>
+          <a class="xref" href="Tizen.NUI.StyleManager.html">StyleManager</a>
         </h4>
         <section class="col col-12 col-md-8"><p>The StyleManager informs applications of the system theme change, and supports application theme change at runtime.<br>
 Applies various styles to controls using the properties system.<br>
@@ -852,10 +847,7 @@ It provides the path to the application resource root folder, from there the fil
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
-          <span class="obsolete-content-wrapper">
-            <a class="xref" href="Tizen.NUI.StyleManager.StyleChangedEventArgs.html">StyleManager.StyleChangedEventArgs</a>
-          </span>
-          <span class="obsolete-img" title="Deprecated in API9, will be removed in API11. Use ThemeManager instead."></span>
+          <a class="xref" href="Tizen.NUI.StyleManager.StyleChangedEventArgs.html">StyleManager.StyleChangedEventArgs</a>
         </h4>
         <section class="col col-12 col-md-8"><p>Style changed event arguments.</p>
 </section>
@@ -943,7 +935,7 @@ Timer is provided for application developers to be able to issue
 simple periodic or one-shot events. Please note that the timer
 callback functions should return as soon as possible because they
 block the next SignalTick. Please note that timer signals are not
-in sync with DALi&apos;s render timer.<br>
+in sync with DALi's render timer.<br>
 This class is a handle class so it can be stack allocated and used
 as a member.<br></p>
 </section>
@@ -1200,10 +1192,7 @@ This resized event arguments.</p>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
-          <span class="obsolete-content-wrapper">
-            <a class="xref" href="Tizen.NUI.Window.SafeNativeWindowHandle.html">Window.SafeNativeWindowHandle</a>
-          </span>
-          <span class="obsolete-img" title="This has been deprecated in API9 and will be removed in API11. Use Window.NativeHandle instead."></span>
+          <a class="xref" href="Tizen.NUI.Window.SafeNativeWindowHandle.html">Window.SafeNativeWindowHandle</a>
         </h4>
         <section class="col col-12 col-md-8"><p>Contains and encapsulates Native Window handle.</p>
 </section>
@@ -1223,7 +1212,7 @@ This resized event arguments.</p>
 </section>
       </div>
     <h2 id="structs">Structs
-  </h2>
+</h2>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.BorderVisualProperty.html">BorderVisualProperty</a>
@@ -1236,6 +1225,20 @@ This resized event arguments.</p>
           <a class="xref" href="Tizen.NUI.ColorVisualProperty.html">ColorVisualProperty</a>
         </h4>
         <section class="col col-12 col-md-8"><p>This specifies properties of the ColorVisual.</p>
+</section>
+      </div>
+      <div class="described-list-item row ml-0 mr-0">
+        <h4 class="col col-12 col-md-4">
+          <a class="xref" href="Tizen.NUI.DragData.html">DragData</a>
+        </h4>
+        <section class="col col-12 col-md-8"><p>This specifies drag data.</p>
+</section>
+      </div>
+      <div class="described-list-item row ml-0 mr-0">
+        <h4 class="col col-12 col-md-4">
+          <a class="xref" href="Tizen.NUI.DragEvent.html">DragEvent</a>
+        </h4>
+        <section class="col col-12 col-md-8"><p>This specifies drag event.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -1284,7 +1287,7 @@ This resized event arguments.</p>
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.MeasureSpecification.html">MeasureSpecification</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>[Draft] A MeasureSpecification is used during the Measure pass by a LayoutGroup to inform it&apos;s children how to be measured.
+        <section class="col col-12 col-md-8"><p>[Draft] A MeasureSpecification is used during the Measure pass by a LayoutGroup to inform it's children how to be measured.
 For instance, it may measure a child with an exact width and an unspecified height in order to determine height for width.</p>
 </section>
       </div>
@@ -1359,7 +1362,7 @@ For instance, it may measure a child with an exact width and an unspecified heig
 </section>
       </div>
     <h2 id="interfaces">Interfaces
-  </h2>
+</h2>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.FocusManager.ICustomFocusAlgorithm.html">FocusManager.ICustomFocusAlgorithm</a>
@@ -1380,7 +1383,7 @@ Interface that defines a layout Parent. Enables a layout child to access methods
 </section>
       </div>
     <h2 id="enums">Enums
-  </h2>
+</h2>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.AlphaFunction.BuiltinFunctions.html">AlphaFunction.BuiltinFunctions</a>
@@ -1399,7 +1402,7 @@ Interface that defines a layout Parent. Enables a layout child to access methods
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.Animatable.Capability.html">Animatable.Capability</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Enumeration for Handle&apos;s capabilities that can be queried.</p>
+        <section class="col col-12 col-md-8"><p>Enumeration for Handle's capabilities that can be queried.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -1448,7 +1451,7 @@ Interface that defines a layout Parent. Enables a layout child to access methods
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.ClippingModeType.html">ClippingModeType</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Enumeration for the ClippingMode describing how this actor&apos;s children will be clipped against it.</p>
+        <section class="col col-12 col-md-8"><p>Enumeration for the ClippingMode describing how this actor's children will be clipped against it.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -1501,9 +1504,23 @@ Interface that defines a layout Parent. Enables a layout child to access methods
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
+          <a class="xref" href="Tizen.NUI.DragSourceEventType.html">DragSourceEventType</a>
+        </h4>
+        <section class="col col-12 col-md-8"><p>Drag source event type.</p>
+</section>
+      </div>
+      <div class="described-list-item row ml-0 mr-0">
+        <h4 class="col col-12 col-md-4">
+          <a class="xref" href="Tizen.NUI.DragType.html">DragType</a>
+        </h4>
+        <section class="col col-12 col-md-8"><p>Drag event type.</p>
+</section>
+      </div>
+      <div class="described-list-item row ml-0 mr-0">
+        <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.DrawModeType.html">DrawModeType</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Enumeration for the instance of how the actor and it&apos;s children will be drawn.</p>
+        <section class="col col-12 col-md-8"><p>Enumeration for the instance of how the actor and it's children will be drawn.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -1569,21 +1586,21 @@ This determines the direction that flex items are laid out in the flex container
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.FontSlantType.html">FontSlantType</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Enumeration type for the font&apos;s slant.</p>
+        <section class="col col-12 col-md-8"><p>Enumeration type for the font's slant.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.FontWeightType.html">FontWeightType</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Enumeration type for the font&apos;s weight.</p>
+        <section class="col col-12 col-md-8"><p>Enumeration type for the font's weight.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.FontWidthType.html">FontWidthType</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>Enumeration type for the font&apos;s width.</p>
+        <section class="col col-12 col-md-8"><p>Enumeration type for the font's width.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -1796,10 +1813,7 @@ SpreadMethod defines what happens if the gradient starts or ends inside the boun
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
-          <span class="obsolete-content-wrapper">
-            <a class="xref" href="Tizen.NUI.LinearLayout.Alignment.html">LinearLayout.Alignment</a>
-          </span>
-          <span class="obsolete-img" title="This has been deprecated in API9 and will be removed in API11. Use HorizontalAlignment and VerticalAlignment instead."></span>
+          <a class="xref" href="Tizen.NUI.LinearLayout.Alignment.html">LinearLayout.Alignment</a>
         </h4>
         <section class="col col-12 col-md-8"><p>[Draft] Enumeration for the alignment of the linear layout items</p>
 </section>
@@ -1851,7 +1865,7 @@ Decides when the image texture should be loaded.</p>
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.NotificationLevel.html">NotificationLevel</a>
         </h4>
-        <section class="col col-12 col-md-8"><p>An enum of notification window&apos;s priority level.</p>
+        <section class="col col-12 col-md-8"><p>An enum of notification window's priority level.</p>
 </section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
@@ -2003,10 +2017,7 @@ but all other filter modes do if the desired dimensions are not more than the ra
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
-          <span class="obsolete-content-wrapper">
-            <a class="xref" href="Tizen.NUI.StyleChangeType.html">StyleChangeType</a>
-          </span>
-          <span class="obsolete-img" title="Deprecated in API9, Will be removed in API11."></span>
+          <a class="xref" href="Tizen.NUI.StyleChangeType.html">StyleChangeType</a>
         </h4>
         <section class="col col-12 col-md-8"><p>Types of style change. Enumeration for the StyleChange type.</p>
 </section>
@@ -2167,7 +2178,7 @@ WrapModeU and WrapModeV separately decide how the texture should be sampled when
 </section>
       </div>
     <h2 id="delegates">Delegates
-  </h2>
+</h2>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
           <a class="xref" href="Tizen.NUI.DaliEventHandler-2.html">DaliEventHandler&lt;T, U&gt;</a>
@@ -2182,6 +2193,18 @@ this should be removed with EventHandler from .NET</p>
         </h4>
         <section class="col col-12 col-md-8"><p>[UnmanagedFunctionPointer(CallingConvention.StdCall)]</p>
 </section>
+      </div>
+      <div class="described-list-item row ml-0 mr-0">
+        <h4 class="col col-12 col-md-4">
+          <a class="xref" href="Tizen.NUI.DragAndDrop.DragAndDropEventHandler.html">DragAndDrop.DragAndDropEventHandler</a>
+        </h4>
+        <section class="col col-12 col-md-8"></section>
+      </div>
+      <div class="described-list-item row ml-0 mr-0">
+        <h4 class="col col-12 col-md-4">
+          <a class="xref" href="Tizen.NUI.DragAndDrop.SourceEventHandler.html">DragAndDrop.SourceEventHandler</a>
+        </h4>
+        <section class="col col-12 col-md-8"></section>
       </div>
       <div class="described-list-item row ml-0 mr-0">
         <h4 class="col col-12 col-md-4">
@@ -2203,8 +2226,8 @@ this should be removed with EventHandler from .NET</p>
           </main>
         </div>
       </div>
-          </div>
-    
+    </div>
+
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>
